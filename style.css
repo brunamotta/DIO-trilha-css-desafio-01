@@ -1,0 +1,62 @@
+body {
+    background-color: rgba(0,0,0,1);
+    font-family: raleway, sans-serif;
+    text-align: center;
+    color:#fff
+}
+
+.banner {
+    width: 100%;
+    background: url(./assets/images/banner.png), linear-gradient(rgba(0, 0, 0, 0.6),rgba(49, 168, 221, 0.2),rgba(49, 168, 221, 0.2),rgba(0, 0, 0, 0.6));
+}
+
+.banner-content {
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+}
+
+.banner-content .logo {
+    background-color: rgba(0, 0, 0, 0.3);
+    clip-path: circle();
+    padding: 20px;
+}
+
+.banner-content h1 {
+    font-size: 40px;
+    font-weight: 900;
+    text-transform: uppercase;
+    background: linear-gradient(#33A8DB,#1472B7);
+    background-clip: text;
+    color: transparent;
+}
+
+.banner-content p {
+    max-width: 50vw;
+    font-size: 20px;
+}
+
+.banner-content button {
+    margin-top: 8px;
+    padding: 19px 91px;
+    background: linear-gradient(#33A8DB,#1472B7);
+    background-clip: text;
+    font-family: Raleway, sans-serif;
+    font-size: 16px;
+    letter-spacing: 21%;
+    font-weight: 900;
+    color: transparent;
+    text-transform: uppercase;
+    border-width: 2px;
+    border-style: solid;
+    border-image:
+        linear-gradient(
+            to bottom,
+            #33A8DB,
+            #1472B7
+        )1 1;
+    cursor: pointer;
+}
