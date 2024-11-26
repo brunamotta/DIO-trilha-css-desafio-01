@@ -2,12 +2,19 @@ body {
     background-color: rgba(0,0,0,1);
     font-family: raleway, sans-serif;
     text-align: center;
-    color:#fff
+    color:#fff;
+    line-height: 1.4;
 }
 
 .banner {
     width: 100%;
-    background: url(./assets/images/banner.png), linear-gradient(rgba(0, 0, 0, 0.6),rgba(49, 168, 221, 0.2),rgba(49, 168, 221, 0.2),rgba(0, 0, 0, 0.6));
+    background:
+        url(./assets/images/banner.png),
+        linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(49, 168, 221, 0.2),
+            rgba(0, 0, 0, 0.6)
+            );
 }
 
 .banner-content {
@@ -17,6 +24,7 @@ body {
     justify-content: flex-start;
     align-items: center;
     gap: 16px;
+    border-bottom: 1px solid #33A8DB80;
 }
 
 .banner-content .logo {
@@ -59,4 +67,43 @@ body {
             #1472B7
         )1 1;
     cursor: pointer;
+}
+
+#course-content {
+    margin: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+#course-content h2 {
+    font-size: 2rem;
+    color: #33A8DB;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+#course-content p {
+    max-width: 60vw;
+}
+
+#course-content .modules-list {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 24px;
+}
+
+.module {
+    background-color: #252525;
+    border: 1px solid #33A8DB;
+    border-radius: 56px;
+    padding: 16px 127px;
+    box-shadow: inset -2px 6px 4px rgba(0, 0, 0, 0.4);
+}
+
+.module span {
+    color:#33A8DB
 }
